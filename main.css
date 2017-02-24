@@ -1,0 +1,145 @@
+p{ 
+	color:blue;
+	font-size:18px; 
+}
+
+.list {
+	color:green;
+	font-size:20px;
+}
+
+.paragraph{
+	color:red;
+	font-size:19px;
+}
+
+#background {
+	background-color:lime;
+}
+
+#button {
+	width:100px;
+	height:50px;
+	color:white;
+	background-color:black;
+	border-radius:18px;
+}
+
+#image1 {
+	width:180;
+	height:300;
+}
+
+#image2 {
+	width:180;
+	height:300;
+}
+
+#image3 {
+	width:180;
+	height:300;
+}
+
+#image4 {
+	width:180;
+	height:300;
+}
+
+header {
+	height:115px;
+	width:700px;
+	border:5px solid black;
+	background-color:#09a5f9;
+	font-size:85px;
+	color:lime;
+	margin-bottom:.5em;
+}
+
+footer {
+	height:65px;
+	width:650px;
+	border:5px solid black;
+	background-color:#09a5f9;
+	font-size:50px;
+	color:lime;
+	margin-top:15px
+}
+
+.wrap-trivia {
+	height:250px;
+	width:280px;
+	border:5px double yellow;
+	padding:5px;
+}
+
+.wrap-list {
+	height:120px;
+	width:600px;
+	border:5px double yellow;
+}
+
+.wrap-text {
+	color:red;
+	font-size:25px;
+}
+
+#one {
+	height:150px;
+	width:150px;
+	background-color:purple;
+	display:inline-block;
+	position:relative;
+	z-index:1;
+	top:750px;
+}
+
+#two {
+	height:150px;
+	width:150px;
+	background-color:red;
+	display:inline-block;
+	position:absolute;
+	z-index:2;
+}
+
+#three {
+	height:150px;
+	width:150px;
+	background-color:#42f4e5;
+	display:inline-block;
+	position:fixed;
+	left:25%;
+}
+
+#bdy {
+	height:2048px;
+}
+
+.navitem {
+	list-style-type:none;
+	display:inline;
+	padding-right:1.5em;
+}
+
+#navmenu {
+	height:18px;
+	width:250px;
+	margin:auto;
+	border:solid black;
+}
+
+a:link {
+	color:black;
+}
+
+a:visited {
+	color:white;
+}
+
+a:hover {
+	color:red;
+}
+
+a:active {
+	color:blue;
+}

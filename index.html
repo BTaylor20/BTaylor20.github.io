@@ -1,0 +1,88 @@
+
+<html> 
+<head>
+<link type="text/css" rel="stylesheet" href="main.css"/>
+<title>My Favorite Author</title>
+	<script>
+	function banner(){ 
+var text = confirm("Are you sure you want to leave this page?"); 
+return text; 
+}
+
+function answer() {
+	var radio = document.getElementsByName("trivia"); 
+var selection = false; 
+var message = "";
+for( var i = 0; i < radio.length; i++) { 
+if(radio[i].value == "kcr" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} //end for loop
+if(selection == true) {
+message = message + "<b><p style='color:green'>Good Job</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+}//end function answer
+	</script>
+</head> 
+
+<body id="background"> 
+	<a href="http://www.brandonsanderson.com/" onclick="return banner()">
+	<header id="header">My Favorite Author</header>
+</a>
+
+	<nav>
+		<ul id="navmenu">
+			<li class="navitem"><a href="index.html">Home</a></li>
+			<li class="navitem"><a href="page2.html">Page 2</a></li>
+			<li class="navitem"><a href="page3.html">Page 3</a></li>
+
+	</nav>
+	
+	<!--must leave code intact in order to stream our audio--><p><embed src='http://soundbible.com/media/stream.swf'width='200'height='20'bgcolor='#ffffff'allowscriptaccess='always'allowfullscreen='true'flashvars='file=http://soundbible.com/mp3/1_person_cheering-Jett_Rifkin-1851518140.mp3&link=http://soundbible.com/2103-1-Person-Cheering.html'/><br/><a href="http://soundbible.com/" title="Free Sound Clips"><img src="http://soundbible.com/media/soundbible-tiny.gif" alt="Free Sound Clips" border="0"></a></p><!--must leave code intact in order to stream our audio-->
+
+<h1>Brandon Sanderson</h1>
+<p><b>Brandon Sanderson</b> is a <u>great</u> author who writes very good books. Some of his books are connected and form a complex universe called the <i>Cosmere.</i> I'll be talking about him and his books.</p>
+
+<div class="wrap-list">
+<ol>
+	<li class="list">Who is Brandon Sanderson?: He is science fiction author</li>
+	<li class="list">What are his greatest books?: The Stormlight Archive (in my opinion)</li>
+	<li class="list">What is the cosmere?: The universe with all his connected books</li>
+</ol>
+</div>
+
+<div class="wrap-trivia">
+<h2><span class="wrap-text">Book Trivia Question</span></h2>
+<p class="paragraph">Which book is not in the Cosmere?</p>
+
+<form>
+	<div id="response"></div>
+
+<input type="radio" name="trivia" value="stl">The Way of Kings<br>	
+<input type="radio" name="trivia" value="stl">The Alloy of Law<br>
+<input type="radio" name="trivia" value="kcr">Steelheart<br>
+<input type="radio" name="trivia" value="stl">Elantris<br>
+<input type="button" value="Submit" id="button" onclick="answer()">
+</form>
+</div>
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/51ZX3mqLFzL._SY445_QL70_.jpg" id="image1"/>
+<img src="http://images.gr-assets.com/books/1357576738l/17182126.jpg" id="image2"/>
+<img src="https://upload.wikimedia.org/wikipedia/en/c/c5/Elantris_cover.jpg" id="image3"/>
+<img src="http://images.gr-assets.com/books/1442889632l/10803121.jpg" id="image4"/>
+
+<hr>
+
+<center> <a href="http://www.coolmath-games.com/"> My Favorite Website</a></center>
+
+
+<footer>Website made by: Ben Taylor</footer>
+
+<p>Here is a great video, just because I can. Enjoy!</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vd79mpzBnJ4?rel=0" frameborder="0" allowfullscreen></iframe>
+
+</body> 
+</html>
